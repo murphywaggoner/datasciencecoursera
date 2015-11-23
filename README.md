@@ -16,9 +16,9 @@
 ### The file HARUSmeanSummary.txt 
 - was written with the R command 
 
-write.table(HARUSmeanSummary, file = "HARUSmeanSummary.txt", sep = ",", 
+- write.table(HARUSmeanSummary, file = "HARUSmeanSummary.txt", sep = ",", 
            row.name = FALSE, qmethod = "double")
--and be read with the command
-readdata <- read.table("HARUSmeanSummary.txt", header = TRUE, sep = ",")
+- and be read with the command
+ -readdata <- read.table("HARUSmeanSummary.txt", header = TRUE, sep = ",")
 
 
