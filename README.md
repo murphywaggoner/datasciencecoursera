@@ -1,43 +1,28 @@
-<<<<<<< HEAD
-# Coursera Data Science Course
+# Coursera Data Science Specialization 
 
-## My first repository
+## Getting and Cleaning Data Project
 
-* Questions I still have
 
-  * The data flow is a little difficult to understand.  I don't get the difference between a commit and a push and wonder why only push required a password.
-  * For one repository I initialized it in GitHub and for the other I used command lines.  Does it matter?
+* R script to complete Getting and Cleaning Data project for Week 3 - run_analysis.R
+** Summary:
+     a)  The variable names and activity level files are read and a set of 
+         desired columns is determined
+     b)  (i) The test files (test_X, test_Y, test_data) are read, renaming the columns
+          in the data file to those from the variable names read above.
+          (ii) The columns are combined into one dataframe, and those columns not desired
+          are removed.
+          (iii) The activity names are substituted for the activity indices (labels)
+     c)  The steps in b) are repeated for the training data
+     d)  The test and training dataframes are merged, melted and recast
+         to result in a data set with the mean of each variable for each activity and 
+		 each subject
 
-* Plans for what I want to do
 
-  * Contribute to the Webwork OPL
-    - I forked the repository.
-    - I understand that contributions go to the contribution folder.
-    - I need to check into how the information in the header of the .pg files are made.
-    - And then how do I contribute new questions - not revisions of existing questions.
-    - All of that requires me to understand Git Bash and Git Hub better
-=======
-# Coursera Data Science Course
+* HARUSmeanSummary.txt
+** was written with the R command 
+write.table(HARUSmeanSummary, file = "HARUSmeanSummary.txt", sep = ",", 
+           row.name = FALSE, qmethod = "double")
+**an be read with the command
+readdata <- read.table("HARUSmeanSummary.txt", header = TRUE, sep = ",")
 
-## My first repository
 
-* Questions I still have
-
-  * The data flow is a little difficult to understand.  I don't get the difference between a commit and a push and wonder why only push required a password.
-
-  * For one repository I initialized it in GitHub and for the other I used command lines.  Does it matter?
-
-* Plans for what I want to do
-
-  * Contribute to the Webwork OPL
-
-    * I forked the repository.
-
-    * I understand that contributions go to the contribution folder.
-
-    * I need to check into how the information in the header of the .pg files are made.
-
-    * And then how do I contribute new questions - not revisions of existing questions.
-
-  * All of that requires me to understand Git Bash and Git Hub better
->>>>>>> 05a2178984c5b8b480009464a897a031990c7f65
